@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Наші: Українська діаспора</title>
+  <style>
+    body {
+      font-family: system-ui, sans-serif;
+      max-width: 800px;
+      margin: 40px auto;
+      line-height: 1.6;
+      color: #222;
+      padding: 0 16px;
+    }
+    nav {
+      text-align: right;
+      margin-bottom: 20px;
+    }
+    button {
+      background: #0057b7;
+      color: white;
+      border: none;
+      padding: 6px 12px;
+      border-radius: 6px;
+      cursor: pointer;
+      margin-left: 5px;
+    }
+    button:hover {
+      background: #003f88;
+    }
+    h1, h2 {
+      color: #0057b7;
+    }
+    ul {
+      list-style-type: "– ";
+    }
+  </style>
+</head>
+<body>
+  <nav>
+    <button onclick="setLang('uk')">🇺🇦 Українська</button>
+    <button onclick="setLang('en')">🇬🇧 English</button>
+  </nav>
+
+  <div id="uk" class="lang">
+    <h1>Наші: Українська діаспора</h1>
+    <p><strong>Твій каталог локальних послуг і місць поруч від українців.</strong></p>
+
+    <p>Переїхали в нове місто чи країну і знову треба шукати послуги?  
+    Більше не потрібно витрачати години на пошук послуг!</p>
+
+    <p>У нашому додатку ви швидко знайдете послуги такі як: автомайстерні, перевізники, лікарі, б’юті-майстри, юристи та багато інших.</p>
+
+    <h2>Можливості додатку:</h2>
+    <ul>
+      <li><strong>Створення послуг (оголошень):</strong>  
+      Користувач або бізнес може створити послугу, вказати країну, місто або онлайн, категорію, контактні дані та додаткову інформацію.</li>
+      <li><strong>Пошук (фільтр):</strong>  
+      За допомогою фільтра на екрані послуги ви зможете знайти послуги по країні, місту, категоріях та підкатегоріях.</li>
+    </ul>
+
+    <p><strong>З додатком “Наші: Українська діаспора” ти завжди почуватимешся, ніби вдома, де б ти не був!</strong></p>
+  </div>
+
+  <div id="en" class="lang" style="display:none">
+    <h1>Nashi: Ukrainian Diaspora</h1>
+    <p><strong>Your local catalog of services and places from Ukrainians near you.</strong></p>
+
+    <p>Moved to a new city or country and need to find services again?  
+    No more wasting hours searching!</p>
+
+    <p>With our app, you can quickly find services such as auto repair shops, transport companies, doctors, beauty professionals, lawyers, and many more.</p>
+
+    <h2>App features:</h2>
+    <ul>
+      <li><strong>Service creation (ads):</strong>  
+      A user or business can create a listing, specify a country, city, or “online”, select a category, and provide contact details and additional info.</li>
+      <li><strong>Search (filter):</strong>  
+      Use the filter on the Services screen to find listings by country, city, category, and subcategory.</li>
+    </ul>
+
+    <p><strong>With “Nashi: Ukrainian Diaspora,” you’ll always feel at home — wherever you are!</strong></p>
+  </div>
+
+  <script>
+    function setLang(lang) {
+      document.querySelectorAll('.lang').forEach(div => div.style.display = 'none');
+      document.getElementById(lang).style.display = 'block';
+    }
+  </script>
+</body>
+</html>
